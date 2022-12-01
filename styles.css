@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.navegadores{
+    position: fixed;
+    width: 100%;
+    z-index: 2;  
+}
+.top_header {
+    display: flex;
+    align-items: center;
+    padding: 5px 10%;
+    background-color: black;
+    width: 100vw;
+    overflow: hidden;   
+}
+.top_header a{
+    color: white; 
+    width: 100vw;  
+}
+.fa-bars{
+    visibility: hidden;
+}
+.menu {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;  
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px ;
+    background-color: white;
+    width: 100%;
+}
+.logo{
+    cursor: pointer;
+    width: 200px;
+}
+.nav_links{
+    list-style: none;
+    text-decoration: none;
+    display: flex;   
+}
+.nav_links a{
+    color: black;
+    text-decoration: none;
+
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease ease-in-out;
+    border: 1px solid transparent;
+    color: black
+}
+.nav_links li a:hover {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+}
+body{
+    background-color:rgb(199, 191, 191) ;   
+}
+.foto_principal{
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    top: 100px;
+}
+.reproductor_como_siempre{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content:center;
+   margin:100px 0px 0px;
+}
+.reproductor_como_siempre h2,h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;  
+}
+.contenedor_imagen_para_video{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;  
+}
+.imagen_para_video{
+    margin: 0px 20px;
+    width: 500px;
+}
+.texto_index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.imagen_para_video h2{
+    margin-top: 10px;
+}
+.imagen_para_video h3{
+    margin-bottom: 10px;
+}
+.foto_pdu{
+    padding: 0px 40px;
+}
+.boton{
+    display: flex;
+    margin-right: 0px;
+    align-items: center;
+    justify-content: center;   
+}
+.fa-play{
+    color: white;
+}
+.boton a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: small;
+    display: block;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(0.90);
+        box-shadow: 0 0 0 0 rgba(255,255,255,0.4);
+    }
+    70%{
+        transform: scale(0.80);
+        box-shadow: 0 0 0 10px rgba(255,255,255,0.4);
+
+    }
+    100%{
+        transform: scale(0.90);
+        box-shadow: 0 0 0 10px rgba(255,255,255,0);
+    }
+}
+    
+.boton a:hover{
+    color: gray;
+}
+.footer_bottom{
+    background-color: black;
+    align-items: center;
+    padding: 5px 0px 5px;   
+    width: 100%;
+}
+.footer_info{
+    color: white;
+    text-align: center;
+    padding: 0px 0px 0px;  
+}
+.footer_info h5{
+    margin: 5px;
+    font-size:medium;
+    font-family: "Montserrat", sans-serif;
+}
+.banner{
+    display: flex;
+    text-align: right;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 100px;
+    justify-content: center; 
+    align-items: center;
+    background: url(./assets/img/para\ bio1crop3.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-family: "Montserrat";
+    font-size: x-large;
+    z-index: 1;  
+}
+.bio{
+    height: auto;
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: rgb(65, 62, 62);
+    margin: 120px 150px 0px 150px;
+    line-height: 20px;     
+}
+span{
+    color: black;
+    font-size: 15px;
+}
+.foto1{
+    float: right;
+}
+.foto2{
+    float: left;
+    margin-right: 20px;
+}
+.contenedor_discografia{
+    display: flex;
+    margin-top: 120px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;   
+}
+.contenedor_discografia h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;     
+}
+.tapa_mientras_llueve, .tapa_como_siempre{
+    width: 300px;
+}
+.como_siempre ,.mientras_llueve {
+    width: 350px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contenedor_singles{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;    
+    margin-bottom: 10px;
+}
+.barrio , .siembra, .a_la_uruguaya, .donde_siempre{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.singles{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;  
+    margin-left: 180px;  
+}
+.formulario{
+   width: 310px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin-bottom: 50px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+label{
+    font-size: 17px;
+    font-style: italic;   
+}
+#boton{
+    background-image: linear-gradient(to left, #615744 0, #60513c 10%, #5f4b35 20%, #5d432d 30%, #5b3b26 40%, #59321f 50%, #572819 60%, #541f16 70%, #521514 80%, #500913 90%, #4d0015 100%);
+    color: white;
+    width: 50px;
+    font-size: 14px;
+    padding-right: 60px;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+#boton:hover{    
+    cursor: pointer;
+    background-image: linear-gradient(to right, #615744 0, #60513c 10%, #5f4b35 20%, #5d432d 30%, #5b3b26 40%, #59321f 50%, #572819 60%, #541f16 70%, #521514 80%, #500913 90%, #4d0015 100%); 
+}
+.gallery_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 350px;
+    padding: 10px;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    transition: 1s;
+}
+.gallery_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery_img:hover{
+    transform: scale(1.3);
+}
+.gallery_item{
+    box-shadow: 0px 8px 10px -4px;
+}
+.gallery_item:hover {
+    filter: opacity(.8);
+    overflow: hidden;
+}
+.gallery_item:nth-child(4){
+    grid-row-start: span 2;
+}
+.gallery_item:nth-child(6){
+    grid-column-start: span 2;
+}
+.gallery_item:nth-child(5){
+    grid-column-start: span 2;
+}
+.gallery_item:nth-child(9){
+    grid-row-start: span 2;
+}
+.gallery_item:nth-child(7){
+    grid-row-start: span 2;
+}
+
+@media (max-width:650px){
+    
+    .top_header{
+        justify-content:center; 
+        width: 100vw;  
+    } 
+     .fa-brands{
+        padding: 0px 10px;
+     }
+     .fa-bars{
+        visibility:visible;
+        color: black;
+        font-size: 24px;
+        padding-right: 20px;   
+    }
+    .fa-bars:hover + .nav_links, .fa-bars:focus + .nav_links {
+        right: 0;
+    }
+     header{
+        height: 80px;
+        width: 100vw;
+     }
+     .logo{
+        width: 200px;
+     }
+
+   .nav_links {  
+
+        right: -250px;
+        flex-direction: column;
+        background-color: white;
+        width: 20wh; 
+        text-align: right;
+        position: fixed;
+        transition: 0.2s;
+
+    } 
+    .nav_links:hover{
+        right: 0px;
+    }
+
+    li.menu {
+        font-size: 12px;
+        padding-bottom: 10px;
+        padding-top: 10px;  
+    }
+
+    .foto_principal{
+        top: 80px;
+    }
+
+    .reproductor_como_siempre{
+        width: 100vw;
+        flex-direction: column;
+        margin-left: 0px;
+        text-align: center;
+     
+     }
+     .sp_como_siempre{
+        width:100vw;
+        height:380px;   
+     }
+     
+    
+     .contenedor_imagen_para_video{
+        flex-direction: column;
+    }
+    .imagen_para_video{
+        width: 100vw;
+       margin-left: 0px;
+       margin-right: 0px;
+    }
+ 
+    .foto_pdu{
+        width: 100vw;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+   
+    .banner{
+        height: 100px;
+        font-size: large;
+    
+    }
+    .como_siempre{
+       margin-top: 10px;
+    }
+    .barrio , .siembra, .a_la_uruguaya, .donde_siempre{
+      height: 120px;  
+      width: 100vw;
+    }
+    .sp_mientras_llueve{
+        width: 100vw;
+    }
+    .contenedor_singles{   
+        margin-bottom: 20px;
+    }
+    .singles{ 
+        margin-left: 20px;
+    }
+
+    .gallery_container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 250px;
+    }
+    .gallery_item:nth-child(3){
+        grid-row-start: span 2;
+    }
+}
+
+@media (max-width:450px){
+    .gallery_container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+    } 
+    .gallery_item:nth-child(7),.gallery_item:nth-child(8){
+        grid-column-start: span 2;
+        grid-row-start:span 1 ;
+    }
+    .gallery_item:nth-child(9),.gallery_item:nth-child(10) {
+        grid-column-start: span 2;
+        grid-row-start:span 2 ;
+    }
+}
+
+
+/* ESTILOS PARA BOOTSTRAP*/
+.container{
+    position: relative;
+    top: 130px;
+}
+
+.texto_inicial{
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: rgb(65, 62, 62);
+    font-weight: bold;
+}
+.texto_normal{
+    font-family: "Montserrat";
+    font-size: 16px;  
+}
+
+.footer_bottom_bt{
+    position: relative;
+    top: 120px;
+    background-color: black;
+    align-items: center;
+    padding: 5px 0px 5px;   
+    width: 100%;   
+}
+.foto1_bt{
+    width: 200px;
+}
+.red_bt{
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
